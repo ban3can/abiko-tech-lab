@@ -1,15 +1,15 @@
 :root {
   color-scheme: light;
-  --ink: #17211f;
-  --muted: #5f6f6b;
-  --paper: #f7f4ec;
-  --surface: #ffffff;
-  --line: #d8ddd4;
-  --moss: #55756b;
-  --teal: #177c8d;
-  --sun: #e2ad47;
-  --coral: #c96b4d;
-  --shadow: 0 12px 34px rgba(23, 33, 31, 0.1);
+  --ink: #21352d;
+  --muted: #63766d;
+  --paper: #f4f0e6;
+  --surface: #fffaf0;
+  --mist: #e7f0ea;
+  --line: #d5dfd4;
+  --moss: #6f8d5e;
+  --water: #6d9aa3;
+  --sun: #d8ad63;
+  --shadow: 0 16px 40px rgba(48, 72, 58, 0.09);
   font-family: Inter, "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", Meiryo, sans-serif;
 }
 
@@ -56,22 +56,23 @@ a {
 
 .brand {
   gap: 10px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .brand-mark {
   display: inline-grid;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.58);
-  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .nav {
   gap: clamp(14px, 3vw, 32px);
   font-size: 0.94rem;
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .nav a {
@@ -80,7 +81,7 @@ a {
 
 .hero {
   position: relative;
-  min-height: 62vh;
+  min-height: 66vh;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -103,8 +104,8 @@ a {
 .hero-overlay {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(12, 29, 27, 0.7) 0%, rgba(12, 29, 27, 0.42) 42%, rgba(12, 29, 27, 0.08) 76%),
-    linear-gradient(0deg, rgba(12, 29, 27, 0.46) 0%, rgba(12, 29, 27, 0.02) 46%);
+    linear-gradient(90deg, rgba(37, 62, 46, 0.62) 0%, rgba(37, 62, 46, 0.36) 38%, rgba(37, 62, 46, 0.06) 76%),
+    linear-gradient(0deg, rgba(33, 53, 45, 0.34) 0%, rgba(33, 53, 45, 0.02) 48%);
 }
 
 .hero-content {
@@ -117,7 +118,7 @@ a {
   margin: 0 0 14px;
   color: var(--sun);
   font-size: 0.78rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -130,17 +131,17 @@ p {
 }
 
 h1 {
-  max-width: 15ch;
+  max-width: 18ch;
   margin-bottom: 24px;
-  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4.2vw, 3.35rem);
   line-height: 1.12;
-  font-weight: 800;
+  font-weight: 750;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 20px;
-  font-size: clamp(1.7rem, 3.4vw, 2.7rem);
+  font-size: clamp(1.55rem, 3.1vw, 2.45rem);
   line-height: 1.16;
   letter-spacing: 0;
 }
@@ -149,6 +150,7 @@ h3 {
   margin-bottom: 12px;
   font-size: 1.28rem;
   line-height: 1.25;
+  font-weight: 750;
 }
 
 .about p,
@@ -157,7 +159,7 @@ h3 {
 }
 
 .section {
-  padding: clamp(58px, 8vw, 104px) clamp(20px, 6vw, 84px);
+  padding: clamp(54px, 7vw, 96px) clamp(20px, 6vw, 84px);
 }
 
 .section-inner {
@@ -172,7 +174,7 @@ h3 {
 }
 
 .projects {
-  background: #eef5f3;
+  background: var(--mist);
 }
 
 .project-list {
@@ -182,11 +184,16 @@ h3 {
 }
 
 .project-list article {
-  min-height: 160px;
+  min-height: 148px;
   padding: clamp(22px, 4vw, 34px);
   border: 1px solid var(--line);
   background: var(--surface);
+  border-radius: 18px;
   box-shadow: var(--shadow);
+}
+
+.project-list h3 {
+  color: var(--moss);
 }
 
 .mission {
@@ -194,7 +201,7 @@ h3 {
 }
 
 .contact {
-  background: var(--ink);
+  background: #263f34;
   color: #ffffff;
 }
 
@@ -219,6 +226,7 @@ h3 {
 .contact-links a {
   padding: 10px 14px;
   border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
   font-weight: 800;
 }
 
